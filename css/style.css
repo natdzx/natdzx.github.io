@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow+Condensed:300,600');
 
-
 .header {
   grid-area: header;
   grid-column: 1/3;
