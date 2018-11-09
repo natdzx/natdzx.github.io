@@ -2,34 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Natalia Diaz: Resume</title>
 
   </head>
 
   <body>
-    <header>
+    <div class="grid">
+    <header class="header">
       <h1>Natalia Diaz: Resume</h1>
       <h2>Advertising and Design</h2>
-      <nav>
+      <!-- <nav>
         <ul>
-          <li><a href="#experiencebegin">Experience</a></li>
-          <li><a href="#skillsbegin">Skills</a></li>
-          <li><a href="#aboutmebegin">About Me</a></li>
-          <li><a href="#educationbegin">Education</a></li>
-          <li><a href="#awardsbegin">Awards</a></li>
-          <li><a href="#contactbegin">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <img src="me-resume-medium.jpg" alt="Picture of me, Natalia Diaz"/>
     </header>
 
     <main>
-      <section>
-        <h3 id="experiencebegin">Experience</h3>
+        <section class="aboutme">
+        <h3>About Me</h3>
+          <p>Knowledge-oriented undergrad student with creative concepting and design education. Looking for exciting opportunities in the creative industry.</p>
+        </section>
+
+        <section class="education">
+        <h3>Education</h3>
         <article>
+          <h4>University of Miami</h4>
+          <p>Coral Gables, FL</p>
+          <p>August 2016- Present<p>
+          <p><strong>Bachelor of Science in Creative Advertising</strong><p>
+          <p>Minor in Interactive Media</p>
+          <p>3.93 GPA</p>
+        </article>
+        </section>
+
+        <section class="awards">
+        <h3>Awards</h3>
+        <ul>
+          <li>Praddys 2nd place campaign</li>
+          <li>Dean’s List</li>
+          <li>President’s Scholarship</li>
+          <li>Rising Star nominee</li>
+          <li>NSAC Regionals Gold</li>
+        </ul>
+        </section>
+
+
+      <section class="experience">
+        <h3>Experience</h3>
+        <article>
+          <div class="experiencelocation">
           <h4>Toppel Career Center</h4>
           <p>Coral Gables, FL</p>
-          <p><strong>Design Intern</strong></p>
+          </div>
+
+          <p><strong>Design Intern. </strong></p>
           <p>October 2017- May 2018</p>
           <p>Created visually appealing marketing material for a variety of audiences. Media included posters, flyers, logos, and other electronic materials.</p>
           <p>Contributed editorial and copy-writing assistance on team member’s individual projects such as newsletters and flyers.</p>
@@ -37,35 +71,41 @@
         </article>
 
         <article>
+          <div>
           <h4>National Student Advertising Competition</h4>
           <p>University of Miami, Coral Gables, FL</p>
-          <p><strong>Art Director and Designer</strong>
+          </div>
+          <p><strong>Art Director and Designer.</strong>
           <p>December 2017- May 2018</p>
           <p>Collaborated with student team to develop a multifaceted corporate campaign for Ocean Spray. Role ranged from in-depth creative concepting to executing those concepts.
           <p>Designed material for the campaign in Adobe Photoshop.</p>
         </article>
 
         <article>
+          <div>
           <h4>The Melissa Institute</h4>
           <p>Coral Gables, FL</p>
-          <p><strong>Art Director and Designer</strong></p>
+          </div>
+          <p><strong>Art Director and Designer. </strong></p>
           <p>February 2018 (25 hours)</p>
           <p>Developed a variety of campaign material, in 25 consecutive hours, to rebrand and boost awareness for a local non-profit.</p>
         </article>
 
         <article>
+          <div>
           <h4>Art South Miami</h4>
           <p>Coral Gables, FL</p>
-          <p><strong>Designer</strong></p>
+          </div>
+          <p><strong>Designer. </strong></p>
           <p>February 2017 (25 hours)</p>
           <p>Produced graphic design material, in 25 consecutive hours, to redesign the organization’s branding and maximize their social media presence.</p>
         </article>
       </section>
 
-      <section>
-        <h3 id="skillsbegin">Skills</h3>
+      <section class="skills">
+        <h3>Skills</h3>
         <article>
-          <h4>Software</h4>
+          <!-- <h4>Software</h4> -->
           <ul>
             <li>Illustrator</li>
             <li>InDesign</li>
@@ -79,8 +119,8 @@
           </ul>
         </article>
 
-        <article>
-          <h4>Language</h4>
+        <!-- <article>
+          <h5>Language</h4>
           <ul>
             <li>Spanish</li>
             <li>Portuguese</li>
@@ -88,56 +128,29 @@
         </article>
 
         <article>
-          <h4>General</h4>
+          <h5>General</h4>
           <ul>
             <li>Art Direction</li>
             <li>Graphic Design</li>
             <li>Branding</li>
             <li>Social Media</li>
           </ul>
-        </article>
-      </section>
-
-
-      <section>
-        <h3 id="aboutmebegin">About Me</h3>
-          <p>Knowledge-oriented undergrad student with creative concepting and design education. Looking for exciting opportunities in the creative industry.</p>
-      </section>
-
-      <section>
-        <h3 id="educationbegin">Education</h3>
-        <article>
-          <h4>University of Miami</h4>
-          <p>Coral Gables, FL</p>
-          <p>August 2016- Present<p>
-          <p><strong>Bachelor of Science in Creative Advertising</strong><p>
-          <p>Minor in Interactive Media</p>
-          <p>3.93 GPA</p>
-        </article>
-      </section>
-
-      <section>
-        <h3 id="awardsbegin">Awards</h3>
-          <ul>
-            <li>Praddys 2nd place campaign</li>
-            <li>Dean’s List</li>
-            <li>President’s Scholarship</li>
-            <li>Rising Star nominee</li>
-            <li>NSAC Regionals Gold</li>
-          </ul>
+        </article> -->
       </section>
     </main>
+
     <footer>
-      <section>
-        <h3 id="contactbegin">Contact</h3>
-        <address>
-          <p>Natalia Diaz</p>
-          <p>(305)799-6850</p>
-          <p>nid5@miami.edu</p>
-          <p><a href="https://www.linkedin.com/in/natalia-diaz-650447145">LinkedIn</a></p>
-          <p><a href="https://natidiaz0716.wixsite.com/nataliadiaz"> My Portfolio</a></p>
-        </address>
-      </section>
+    <section class="contact">
+    <h3 id="largecontact">Contact</h3>
+    <address>
+      <p>Natalia Diaz</p>
+      <p>(305)799-6850</p>
+      <p>nid5@miami.edu</p>
+      <p><a href="https://www.linkedin.com/in/natalia-diaz-650447145">LinkedIn</a></p>
+      <p><a href="https://natidiaz0716.wixsite.com/nataliadiaz"> My Portfolio</a></p>
+    </address>
+    </section>
     </footer>
+  </div>
   </body>
 </html>
