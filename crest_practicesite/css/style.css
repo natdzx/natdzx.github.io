@@ -1,0 +1,205 @@
+/* font-family: 'Fugaz One', cursive;
+font-family: 'Roboto Condensed', sans-serif; */
+
+#wrapper{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+h1{
+  font-family: 'Fugaz One', cursive;
+  color:black;
+}
+
+h2{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color:black;
+  font-family: 'Fugaz One', cursive;
+}
+
+h3{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color:black;
+}
+
+h4{
+  color: #fb0002;
+  font-size: 25px;
+  font-family: 'Fugaz One', cursive;
+}
+
+h5{
+  font-size: 15px;
+}
+
+h6{
+  font-size: 15px;
+}
+
+h4,li{
+  display: inline-block;
+  margin:0;
+}
+
+h4,li:after{
+  content:"  //  "
+}
+
+li:last-child:after{
+  content:"";
+}
+
+h6,p{
+  display: block;
+  margin:0;
+}
+
+h6:after{
+  content:"  ...  "
+}
+
+p:last-child:after{
+  content:"";
+}
+
+nav li{
+  display: inline-block;
+  padding: 0px 30px 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+article{
+  background-color: #0a0a0a;
+  padding: 40px;
+  margin: 30px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fb0002;
+}
+
+nav a:visited {
+  color: #0a0a0a;
+}
+
+nav a:hover {
+  color: #fb0002;
+}
+
+nav a:active {
+  color: #fb0002;
+}
+
+a{
+  color: #0a0a0a;
+}
+
+a:hover{
+  color:#fb0002;
+}
+
+#missionStatement{
+  font-size: 20px;
+  background-color: #0a0a0a;
+  padding: 20px;
+}
+
+.infoBlock{
+  font-size: 20px;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+#footer{
+  background-color:#0a0a0a;
+  padding: 20px 0px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 10px;
+}
+
+#menuBegin {
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.drinksGrid{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+
+  grid-template-areas:
+  "hotDrinks hotDrinks iced"
+  "smoothiesShakes smoothiesShakes naturalJuices"
+  "additionalBeverages additionalBeverages beerWine"
+}
+
+#hotDrinks{
+  grid-area: hotDrinks;
+}
+
+#iced{
+  grid-area: iced;
+}
+
+#smoothiesShakes{
+  grid-area: smoothiesShakes;
+}
+
+#naturalJuices{
+  grid-area: naturalJuices;
+}
+
+#additionalBeverages{
+  grid-area: additionalBeverages;
+}
+
+#beerWine{
+  grid-area: beerWine;
+}
+
+.lunchGrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+
+  grid-template-areas:
+  "houseFavorites houseFavorites houseFavorites houseFavorites"
+  "seafood chicken beef pork"
+}
+
+#seafood{
+  grid-area: seafood;
+}
+
+#chicken{
+  grid-area: chicken;
+}
+
+#beef{
+  grid-area: beef;
+}
+
+#pork{
+  grid-area: pork;
+}
+
+#houseFavorites{
+  grid-area: houseFavorites;
+}
