@@ -20,7 +20,11 @@ nav{
 
 nav ul{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+}
+
+nav ul:after{
+  content: ""
 }
 
 nav li{
