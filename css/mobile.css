@@ -1,0 +1,63 @@
+@media(max-width: 414px) {
+
+  #missionStatement{
+    font-size: 20px;
+    background-color: #0a0a0a;
+    width:auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  img.resize{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .drinksGrid{
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+    "hotDrinks"
+    "iced"
+    "smoothiesShakes"
+    "naturalJuices"
+    "additionalBeverages"
+    "beerWine"
+  }
+
+  .lunchGrid{
+    grid-template-columns:1fr;
+
+    grid-template-areas:
+    "houseFavorites"
+    "seafood"
+    "chicken"
+    "beef"
+    "pork"
+  }
+
+  .contactGrid{
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+    "contactInfo "
+    "indianContactImage"
+  }
+
+  .aboutGrid{
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+    "ourFamily"
+    "ourHistory"
+  }
+
+  #menuBegin {
+    text-align:center;
+    width: 414px;
+    margin: 0px auto;
+    display: inline;
+  }
+
+
+}
