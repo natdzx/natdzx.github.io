@@ -4,16 +4,62 @@ font-family: 'Roboto Condensed', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Roboto+Condensed:300,700');
 
 #wrapper{
-  max-width: 1000px;
+  max-width: 960px;
   margin:0 auto;
 }
 
+header{
+  width:350px;
+  margin: 0 auto;
+}
+
+nav{
+  width:350px;
+  margin: 0 auto 50px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+nav li:after{
+  content: "";
+}
+
+nav a {
+  text-decoration: none;
+  color: #fb0002;
+}
+
+nav a:visited {
+  color: #0a0a0a;
+}
+
+nav a:hover {
+  color: #fb0002;
+}
+
+nav a:active {
+  color: #fb0002;
+}
 
 body{
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 15px;
   color: #f0f0f0;
+}
+
+header h1 {
+  margin-left: -10000px;
+  height: 0;
 }
 
 h1{
@@ -43,10 +89,12 @@ h4{
 }
 
 h5{
-  font-size: 15px;
+  font-size: 20px;
 }
 
 h6{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
   font-size: 15px;
 }
 
@@ -63,8 +111,8 @@ li:last-child:after{
   content:"";
 }
 
-h6,p{
-  display: block;
+/* h6,p{
+  display: inline-block;
   margin:0;
 }
 
@@ -74,57 +122,7 @@ h6:after{
 
 p:last-child:after{
   content:"";
-}
-
-header{
-  width:450px;
-  margin: 0 auto;
-}
-
-nav{
-  width:450px;
-  margin: 0 auto;
-}
-
-nav ul{
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li{
-  display: inline-block;
-  /* margin-right: 30px; */
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-nav li:after{
-  content: "";
-}
-
-article{
-  background-color: #0a0a0a;
-  padding: 40px;
-  margin: 30px 0px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fb0002;
-}
-
-nav a:visited {
-  color: #0a0a0a;
-}
-
-nav a:hover {
-  color: #fb0002;
-}
-
-nav a:active {
-  color: #fb0002;
-}
+} */
 
 a{
   color: #0a0a0a;
@@ -142,17 +140,36 @@ p{
   padding-bottom: 10px;
 }
 
-#missionStatement{
-  font-size: 20px;
+article{
   background-color: #0a0a0a;
-  padding: 20px;
-  /* text-align: center; */
+  padding: 40px;
+  margin: 30px 0px;
 }
 
 .infoBlock{
   font-size: 20px;
   color: #0a0a0a;
+  padding-right: 20px;
   text-align: center;
+}
+
+#missionStatement{
+  font-size: 20px;
+  background-color: #0a0a0a;
+  width:352px;
+  margin: 0 auto;
+  padding: 10px 304px;
+}
+
+#aboutParagraphs{
+  padding: 30px;
+}
+
+#menuBegin {
+  text-align:center;
+  width: 960px;
+  margin: 20px auto;
+  display: inline-block;
 }
 
 #footer{
@@ -163,11 +180,7 @@ p{
   font-size: 10px;
 }
 
-#menuBegin {
-  text-align: center;
-  padding-top: 40px;
-}
-
+/* everything below this point is for grids */
 
 .drinksGrid{
   display:grid;
@@ -232,4 +245,38 @@ p{
 
 #houseFavorites{
   grid-area: houseFavorites;
+}
+
+.contactGrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+
+  grid-template-areas:
+  "contactInfo indianContactImage"
+}
+
+#contactInfo{
+  grid-area: contactInfo;
+}
+
+#indianContactImage{
+  grid-area: indianContactImage;
+}
+
+.aboutGrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+
+  grid-template-areas:
+  "ourFamily ourHistory"
+}
+
+#ourFamily{
+  grid-area: ourFamily;
+}
+
+#ourHistory{
+  grid-area: ourHistory;
 }
